@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ int income;
+ int sum;
+ cout<<"please enter your income"<<endl;
+ cin>>income;
+ if(income<=150000)
+ {
+ sum=income*0.00;
+ }
+ else if(income>150001 && income<=300000)
+ {
+ sum=income*0.10;
+ }
+ else if(income>300001 && income<=500000)
+ {
+ sum=income*0.20;
+ }
+ else if(income>500001)
+ {
+ sum=income*0.30;
+ }
+ cout<<"your imcome tax is "<<sum<<endl;
+}
